@@ -1,6 +1,9 @@
-import Server from './server/server';
+import 'module-alias/register';
+import Server from './server';
 
-const server = Server.init(3000);
-server.start(() => {
-    // console.log('Ejecutando en puerto 3000');
-});
+const server = Server.instance;
+
+server.configServer();
+server.configRoutes();
+server.handleErrors();
+server.init();
