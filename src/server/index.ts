@@ -10,7 +10,7 @@ export default class Server {
   private port: number;
 
   constructor() {
-    this.port = 3000;
+    this.port = 5000;
 
     this.app = express();
   }
