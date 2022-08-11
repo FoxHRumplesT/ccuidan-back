@@ -1,7 +1,6 @@
 import express, { ErrorRequestHandler, Request, Response, NextFunction } from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import morgan from 'morgan';
 import authRoutes from '@modules/auth/routes';
 
 export default class Server {
@@ -25,8 +24,6 @@ export default class Server {
   public configServer(): void {
     this.app.use(bodyParser.urlencoded({ extended: false }));
     this.app.use(bodyParser.json());
-
-    this.app.use(morgan('tiny'));
 
     this.app.use(cors({ origin: true, credentials: true }));
   }
