@@ -12,17 +12,17 @@
   "_moduleAliases": {
     "@modules": "dist/modules",
     "@utils": "dist/utils",
-    "@env": "dist/env"
+    "@env": "dist/env",
+    "@config": "dist/config"
   },
   "dependencies": {
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
-    "crypto": "^1.0.1",
     "express": "^4.16.4",
-    "firebase": "^5.10.1",
     "joi": "^14.3.1",
     "json-parser": "^1.1.5",
-    "module-alias": "^2.2.0"
+    "module-alias": "^2.2.0",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.1",
@@ -31,6 +31,7 @@
     "@types/joi": "^14.3.3",
     "@types/morgan": "^1.7.35",
     "morgan": "^1.9.1",
-    "typescript": "^3.4.5"
+    "nodemon": "^2.0.19",
+    "typescript": "^3.9.10"
   }
 }

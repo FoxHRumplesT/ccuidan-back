@@ -8,6 +8,7 @@ const mapErrorValidator = (error: ValidationError): Array<{key?: any, message: s
 };
 
 export const validateSchema = (schema: Schema, req: Request, res: Response, next: NextFunction): void => {
+  console.log("🚀 ~ file: validate-schema.ts ~ line 12 ~ schema.validate ~ req.body", req.body)
   schema.validate(req.body, { abortEarly: false }, (err, value) => {
     if (!!err) res.status(400).json(mapErrorValidator(err));
     else next();
