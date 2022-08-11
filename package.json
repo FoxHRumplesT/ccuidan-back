@@ -4,7 +4,8 @@
   "description": "Basic server with typescript and express Node",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon dist/index",
+    "start": "node dist/index",
+    "dev": "nodemon dist/index",
     "tscw": "tsc -w"
   },
   "author": "Rumplestiltskin | FoxHLawII",
